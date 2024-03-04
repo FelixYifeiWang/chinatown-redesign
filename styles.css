@@ -1,0 +1,277 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #2e444f; /* Adjust the color to match your needs */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hamburger-menu {
+    font-family: 'inter';
+    font-size: 3vw;
+    font-weight: lighter;
+    color: white;
+    cursor: pointer;
+    padding-left: 3vw;
+    transition: 0.3s;
+}
+
+.hamburger-menu:hover {
+    color: #ff8700;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 6vw; /* Adjust as necessary for your logo */
+}
+
+.order-now {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    margin-right: 1.5vw;
+}
+
+
+.order-now-button, .order-options {
+    width: 100%; /* Makes both the button and options take up 100% of their parent's width */
+}
+
+.order-now-button {
+    animation: flashOrange 5s infinite;
+    /* color: black; */
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: inset 0 0 0 3px black;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.order-options {
+    position: absolute;
+    left: 50%; /* Start from the center of the parent */
+    top: 100%;
+    transform: translateX(-50%); /* Adjust horizontally to truly center */
+    background-color: white;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+    white-space: nowrap; /* Ensure options do not wrap */
+}
+
+.order-now:hover .order-now-button {
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    box-shadow: inset 0 0 0 0px black;
+}
+
+.order-now:hover .order-options {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Make visible */
+}
+
+.order-option {
+    display: block;
+    text-align: center;
+    font-family: 'inter';
+    font-weight: 300;
+    font-size: 20px;
+    width: 100%; /* Set the width to 100% of the parent */
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    box-sizing: border-box; /* Include padding in the width */
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.order-option:hover {
+    background-color: #f5f5f5;
+    font-weight: 400;
+}
+
+.sushi-image-container {
+    position: relative;
+    width: 100%; /* Container takes the full width of the viewport */
+    height: 70vh; /* Adjust the height as needed */
+    background-image: url('sushi.png'); /* Path to your sushi image */
+    background-size: cover; /* Cover ensures the image covers the full container */
+    background-position: center; /* Centers the image within the container */
+    display: flex;
+    align-items: center;
+}
+
+.sushi-image-container::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensures the overlay is above the background image but below the text */
+}
+
+.sushi-text {
+    display: flex;
+    z-index: 2;
+    flex-direction: column; /* Stacks the span elements vertically */
+    color: white; /* Or any color that stands out on your sushi image */
+    font-size: 64px; /* Adjust the size as needed */
+    font-weight: bolder;
+    margin: 0;
+    padding-left: 8vw;
+    margin-top: -30px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between; /* Ensures space distribution between children */
+    align-items: flex-start; /* Aligns children vertically in the center */
+    width: 100%; /* Full width of its parent */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.hours, .contact {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centers the text-wrapper vertically */
+    text-align: left; /* Ensures text within text-wrapper is aligned to the left */
+}
+
+.text-wrapper {
+    max-width: 100%; /* Optional: Adjust this value to control the text block width */
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start, keeping text left-aligned */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Aligns social icons to the left */
+    margin-top: 10px; /* Adds some space above the icons */
+    /* Ensure the icons are sized and spaced appropriately */
+}
+
+.social-icons img {
+    width: auto; /* Or your preferred size */
+    height: 3vw; /* Or your preferred size */
+    margin-right: 3vw; /* Adjust spacing between icons */
+}
+
+.image-container {
+    flex: 1; /* Allows it to grow */
+    display: flex;
+    justify-content: center; /* Horizontally centers the content (for the image) */
+    align-items: center; /* Vertically centers the image in the container */
+}
+
+h2 {
+    font-family: 'Inter';
+    font-weight: bolder;
+    font-size: 36px;
+    margin-bottom: 20px; 
+    margin-top: -10px;
+    color: #ff8700;
+    text-shadow: 1px 1px 0 #2e444f;
+}
+
+p {
+    font-family: 'Inter';
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.image-container img {
+    width: 90%; /* Ensures the image stretches to cover the container width */
+    height: auto; /* Ensures the image stretches to cover the container height */
+    object-fit: cover; /* Crops and covers the container, maintaining aspect ratio */
+    object-position: center; /* Centers the image within the container */
+    border-radius: 0 100px 0 100px;
+}
+
+.dot-navigation {
+    position: absolute;
+    bottom: 10px; /* Adjust based on your design */
+    width: 100%;
+    text-align: center;
+    z-index: 2; /* Ensure it's above the image */
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid white;
+    transition: 0.3s;
+}
+
+.dot:hover {
+    background-color: transparent;
+}
+
+.dot-active {
+    height: 15px;
+    width: 15px;
+    margin: 0 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid white;
+}
+
+
+@keyframes flashOrange {
+    0%, 100% { color: black; } /* Starting and ending color */
+    20% { 
+        color: #ff8700; 
+        text-shadow: 1px 1px 0 #2e444f;
+    } /* Mid-animation color */
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .image-container {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .hours, .contact {
+        flex-basis: 100%;
+    }
+}
