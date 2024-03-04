@@ -9,7 +9,7 @@ body, h1, h2, p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6vw;
+    height: 12vh;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -17,7 +17,7 @@ body, h1, h2, p {
 
 .hamburger-menu {
     font-family: 'inter';
-    font-size: 3vw;
+    font-size: 7vh;
     font-weight: lighter;
     color: white;
     cursor: pointer;
@@ -36,14 +36,14 @@ body, h1, h2, p {
 }
 
 .logo img {
-    height: 6vw; /* Adjust as necessary for your logo */
+    height: 12vh; /* Adjust as necessary for your logo */
 }
 
 .order-now {
     display: inline-block;
     position: relative;
     white-space: nowrap;
-    margin-right: 1.5vw;
+    margin-right: 3vh;
 }
 
 
@@ -55,13 +55,13 @@ body, h1, h2, p {
     animation: flashOrange 5s infinite;
     /* color: black; */
     background-color: white;
-    padding: 10px 20px;
+    padding: 1.5vh 3vh;
     border: none;
-    box-shadow: inset 0 0 0 3px black;
+    box-shadow: inset 0 0 0 0.5vh black;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 4vh;
     font-weight: bolder;
-    border-radius: 30px;
+    border-radius: 4vh;
     transition: 0.3s;
 }
 
@@ -80,7 +80,7 @@ body, h1, h2, p {
 
 .order-now:hover .order-now-button {
     background-color: white;
-    border-radius: 30px 30px 0 0;
+    border-radius: 4vh 4vh 0 0;
     box-shadow: inset 0 0 0 0px black;
 }
 
@@ -94,9 +94,9 @@ body, h1, h2, p {
     text-align: center;
     font-family: 'inter';
     font-weight: 300;
-    font-size: 20px;
+    font-size: 2.5vh;
     width: 100%; /* Set the width to 100% of the parent */
-    padding: 10px 20px;
+    padding: 1.5vh 3vh;
     cursor: pointer;
     background-color: white;
     border: none;
@@ -138,11 +138,11 @@ body, h1, h2, p {
     z-index: 2;
     flex-direction: column; /* Stacks the span elements vertically */
     color: white; /* Or any color that stands out on your sushi image */
-    font-size: 64px; /* Adjust the size as needed */
+    font-size: 9vh; /* Adjust the size as needed */
     font-weight: bolder;
     margin: 0;
     padding-left: 8vw;
-    margin-top: -30px;
+    margin-top: -4vh;
 }
 
 .info {
@@ -151,8 +151,7 @@ body, h1, h2, p {
     align-items: flex-start; /* Aligns children vertically in the center */
     width: 100%; /* Full width of its parent */
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-top: 30px;
+    margin-top: 3vh;
 }
 
 .hours, .contact {
@@ -164,7 +163,7 @@ body, h1, h2, p {
 
 .text-wrapper {
     max-width: 100%; /* Optional: Adjust this value to control the text block width */
-    margin-top: 8vh;
+    margin-top: 6vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns items to the start, keeping text left-aligned */
@@ -173,7 +172,7 @@ body, h1, h2, p {
 .social-icons {
     display: flex;
     justify-content: flex-start; /* Aligns social icons to the left */
-    margin-top: 10px; /* Adds some space above the icons */
+    margin-top: 1vh; /* Adds some space above the icons */
     /* Ensure the icons are sized and spaced appropriately */
 }
 
@@ -193,18 +192,18 @@ body, h1, h2, p {
 h2 {
     font-family: 'Inter';
     font-weight: bolder;
-    font-size: 36px;
-    margin-bottom: 20px; 
-    margin-top: -10px;
+    font-size: 3vw;
+    margin-bottom: 3vh; 
+    margin-top: -1.5vh;
     color: #ff8700;
-    text-shadow: 1px 1px 0 #2e444f;
+    text-shadow: 0.1vh 0.1vh 0 #2e444f;
 }
 
 p {
     font-family: 'Inter';
     font-weight: bolder;
-    font-size: 20px;
-    margin-bottom: 20px; 
+    font-size: 1.7vw;
+    margin-bottom: 3vh; 
 }
 
 .image-container img {
@@ -215,22 +214,38 @@ p {
     border-radius: 0 100px 0 100px;
 }
 
+.image-container-2 {
+    flex: 1; /* Allows it to grow */
+    display: none;
+    justify-content: center; /* Horizontally centers the content (for the image) */
+    align-items: center; /* Vertically centers the image in the container */
+    margin-top: 4vh;
+}
+
+.image-container-2 img {
+    width: 90%; /* Ensures the image stretches to cover the container width */
+    height: auto; /* Ensures the image stretches to cover the container height */
+    object-fit: cover; /* Crops and covers the container, maintaining aspect ratio */
+    object-position: center; /* Centers the image within the container */
+    border-radius: 0 100px 0 100px;
+}
+
 .dot-navigation {
     position: absolute;
-    bottom: 10px; /* Adjust based on your design */
+    bottom: 2vh; /* Adjust based on your design */
     width: 100%;
     text-align: center;
     z-index: 2; /* Ensure it's above the image */
 }
 
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 20px;
+    height: 2vh;
+    width: 2vh;
+    margin: 0 2.5vh;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
-    border: 3px solid white;
+    border: 0.5vh solid white;
     transition: 0.3s;
 }
 
@@ -239,15 +254,19 @@ p {
 }
 
 .dot-active {
-    height: 15px;
-    width: 15px;
-    margin: 0 20px;
+    height: 2vh;
+    width: 2vh;
+    margin: 0 2.5vh;
     background-color: transparent;
     border-radius: 50%;
     display: inline-block;
-    border: 3px solid white;
+    border: 0.5vh solid white;
 }
 
+.narrow-text {
+    display: none;
+    margin-top: 2vh;
+}
 
 @keyframes flashOrange {
     0%, 100% { color: black; } /* Starting and ending color */
@@ -257,21 +276,129 @@ p {
     } /* Mid-animation color */
 }
 
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 1.2) {
     .content {
         flex-direction: column;
     }
+    .contact {
+        display: none;
+    }
+    .narrow-text {
+        display: block;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+    .image-container img {
+        height: 50vh; /* Adjust based on the container's width while maintaining aspect ratio */
+        width: 50vw; /* Make the image's width responsive to the container's width */
+        margin-left: 5vw;
+        object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+        object-position: center;
+    }
+    .sushi-text {
+        font-size: 7vh;
+    }
+    .dot {
+        height: 1vh;
+        width: 1vh;
+    }
+    .dot-active {
+        height: 1vh;
+        width: 1vh;
+    }
+}
 
+@media (max-aspect-ratio: 0.9) {
+    .logo {
+        position: absolute;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .order-now-button {
+        /* Adjustments specifically for viewports less than 1300px wide */
+        flex-direction: column; /* Explicitly ensure vertical stacking */
+        display: flex;
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        font-size: 3vh;
+        /* Ensure there's enough padding for the two lines to fit comfortably */
+    }
+    .content {
+        flex-direction: column;
+    }
+    .contact {
+        display: none;
+    }
+    .narrow-text {
+        display: block;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+    .text-wrapper {
+        margin-top: 5vh;
+    }
+    .image-container img {
+        height: 50vh; /* Adjust based on the container's width while maintaining aspect ratio */
+        width: 45vw; /* Make the image's width responsive to the container's width */
+        margin-left: 5vw;
+        object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+        object-position: center;
+    }
+    .social-icons img {
+        height: 5vw; /* Or your preferred size */
+        margin-right: 5vw; /* Adjust spacing between icons */
+    }
+}
+
+@media (max-aspect-ratio: 0.65) {
+    .logo {
+        position: absolute;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .order-now-button {
+        /* Adjustments specifically for viewports less than 1300px wide */
+        flex-direction: column; /* Explicitly ensure vertical stacking */
+        display: flex;
+        justify-content: center; /* Center the content vertically */
+        align-items: center; /* Center the content horizontally */
+        font-size: 3vh;
+        /* Ensure there's enough padding for the two lines to fit comfortably */
+    }
+    .content {
+        flex-direction: column;
+    }
+    .contact {
+        display: none;
+    }
+    .narrow-text {
+        display: block;
+    }
+    h2 {
+        font-size: 8vw;
+    }
+    p {
+        font-size: 5vw;
+    }
+    .text-wrapper {
+        margin-top: 3vh;
+    }
     .image-container {
-        padding-right: 0;
-        padding-bottom: 20px;
+        display: none;
     }
-
-    .info {
-        width: 100%;
+    .image-container-2 {
+        display: flex;
     }
-
-    .hours, .contact {
-        flex-basis: 100%;
+    .social-icons img {
+        height: 7vw; /* Or your preferred size */
+        margin-right: 7vw; /* Adjust spacing between icons */
     }
 }
