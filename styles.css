@@ -5,7 +5,7 @@ body, h1, h2, p {
 }
 
 .top-bar {
-    background-color: #2e444f; /* Adjust the color to match your needs */
+    background-color: #2e444f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ body, h1, h2, p {
 }
 
 .logo img {
-    height: 12vh; /* Adjust as necessary for your logo */
+    height: 12vh;
 }
 
 .order-now {
@@ -48,12 +48,11 @@ body, h1, h2, p {
 
 
 .order-now-button, .order-options {
-    width: 100%; /* Makes both the button and options take up 100% of their parent's width */
+    width: 100%;
 }
 
 .order-now-button {
     animation: flashOrange 5s infinite;
-    /* color: black; */
     background-color: white;
     padding: 1.5vh 3vh;
     border: none;
@@ -67,15 +66,15 @@ body, h1, h2, p {
 
 .order-options {
     position: absolute;
-    left: 50%; /* Start from the center of the parent */
+    left: 50%;
     top: 100%;
-    transform: translateX(-50%); /* Adjust horizontally to truly center */
+    transform: translateX(-50%);
     background-color: white;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
-    white-space: nowrap; /* Ensure options do not wrap */
+    transition: opacity 0.3s, visibility 0.3s;
+    white-space: nowrap;
 }
 
 .order-now:hover .order-now-button {
@@ -85,8 +84,8 @@ body, h1, h2, p {
 }
 
 .order-now:hover .order-options {
-    opacity: 1; /* Fully visible */
-    visibility: visible; /* Make visible */
+    opacity: 1;
+    visibility: visible;
 }
 
 .order-option {
@@ -95,12 +94,12 @@ body, h1, h2, p {
     font-family: 'inter';
     font-weight: 300;
     font-size: 2.5vh;
-    width: 100%; /* Set the width to 100% of the parent */
+    width: 100%;
     padding: 1.5vh 3vh;
     cursor: pointer;
     background-color: white;
     border: none;
-    box-sizing: border-box; /* Include padding in the width */
+    box-sizing: border-box;
     color: black;
     text-decoration: none;
     transition: 0.3s;
@@ -113,32 +112,32 @@ body, h1, h2, p {
 
 .sushi-image-container {
     position: relative;
-    width: 100%; /* Container takes the full width of the viewport */
-    height: 70vh; /* Adjust the height as needed */
-    background-image: url('sushi.png'); /* Path to your sushi image */
-    background-size: cover; /* Cover ensures the image covers the full container */
-    background-position: center; /* Centers the image within the container */
+    width: 100%;
+    height: 70vh;
+    background-image: url('sushi.png');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
 }
 
 .sushi-image-container::before {
-    content: ""; /* Required for pseudo-elements */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
-    z-index: 1; /* Ensures the overlay is above the background image but below the text */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .sushi-text {
     display: flex;
     z-index: 2;
-    flex-direction: column; /* Stacks the span elements vertically */
-    color: white; /* Or any color that stands out on your sushi image */
-    font-size: 9vh; /* Adjust the size as needed */
+    flex-direction: column;
+    color: white;
+    font-size: 9vh;
     font-weight: bolder;
     margin: 0;
     padding-left: 8vw;
@@ -147,9 +146,9 @@ body, h1, h2, p {
 
 .info {
     display: flex;
-    justify-content: space-between; /* Ensures space distribution between children */
-    align-items: flex-start; /* Aligns children vertically in the center */
-    width: 100%; /* Full width of its parent */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
     background-color: #fff;
     margin-top: 3vh;
 }
@@ -157,36 +156,35 @@ body, h1, h2, p {
 .hours, .contact {
     flex: 1;
     display: flex;
-    justify-content: center; /* Centers the text-wrapper vertically */
-    text-align: left; /* Ensures text within text-wrapper is aligned to the left */
+    justify-content: center;
+    text-align: left;
 }
 
 .text-wrapper {
-    max-width: 100%; /* Optional: Adjust this value to control the text block width */
+    max-width: 100%;
     margin-top: 6vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligns items to the start, keeping text left-aligned */
+    align-items: flex-start;
 }
 
 .social-icons {
     display: flex;
-    justify-content: flex-start; /* Aligns social icons to the left */
-    margin-top: 1vh; /* Adds some space above the icons */
-    /* Ensure the icons are sized and spaced appropriately */
+    justify-content: flex-start;
+    margin-top: 1vh;
 }
 
 .social-icons img {
-    width: auto; /* Or your preferred size */
-    height: 3vw; /* Or your preferred size */
-    margin-right: 3vw; /* Adjust spacing between icons */
+    width: auto;
+    height: 3vw;
+    margin-right: 3vw;
 }
 
 .image-container {
-    flex: 1; /* Allows it to grow */
+    flex: 1;
     display: flex;
-    justify-content: center; /* Horizontally centers the content (for the image) */
-    align-items: center; /* Vertically centers the image in the container */
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -207,35 +205,35 @@ p {
 }
 
 .image-container img {
-    width: 90%; /* Ensures the image stretches to cover the container width */
-    height: auto; /* Ensures the image stretches to cover the container height */
-    object-fit: cover; /* Crops and covers the container, maintaining aspect ratio */
-    object-position: center; /* Centers the image within the container */
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: 0 100px 0 100px;
 }
 
 .image-container-2 {
-    flex: 1; /* Allows it to grow */
+    flex: 1;
     display: none;
-    justify-content: center; /* Horizontally centers the content (for the image) */
-    align-items: center; /* Vertically centers the image in the container */
+    justify-content: center;
+    align-items: center;
     margin-top: 4vh;
 }
 
 .image-container-2 img {
-    width: 90%; /* Ensures the image stretches to cover the container width */
-    height: auto; /* Ensures the image stretches to cover the container height */
-    object-fit: cover; /* Crops and covers the container, maintaining aspect ratio */
-    object-position: center; /* Centers the image within the container */
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     border-radius: 0 100px 0 100px;
 }
 
 .dot-navigation {
     position: absolute;
-    bottom: 2vh; /* Adjust based on your design */
+    bottom: 2vh;
     width: 100%;
     text-align: center;
-    z-index: 2; /* Ensure it's above the image */
+    z-index: 2;
 }
 
 .dot {
@@ -269,11 +267,11 @@ p {
 }
 
 @keyframes flashOrange {
-    0%, 100% { color: black; } /* Starting and ending color */
+    0%, 100% { color: black; }
     20% { 
         color: #ff8700; 
         text-shadow: 1px 1px 0 #2e444f;
-    } /* Mid-animation color */
+    }
 }
 
 @media (max-aspect-ratio: 1.2) {
@@ -293,10 +291,10 @@ p {
         font-size: 2.5vw;
     }
     .image-container img {
-        height: 50vh; /* Adjust based on the container's width while maintaining aspect ratio */
-        width: 50vw; /* Make the image's width responsive to the container's width */
+        height: 50vh;
+        width: 50vw;
         margin-left: 5vw;
-        object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+        object-fit: cover;
         object-position: center;
     }
     .sushi-text {
@@ -310,6 +308,10 @@ p {
         height: 1vh;
         width: 1vh;
     }
+    .social-icons img {
+        height: 5vw;
+        margin-right: 5vw;
+    }
 }
 
 @media (max-aspect-ratio: 0.9) {
@@ -319,13 +321,11 @@ p {
         transform: translateX(-50%);
     }
     .order-now-button {
-        /* Adjustments specifically for viewports less than 1300px wide */
-        flex-direction: column; /* Explicitly ensure vertical stacking */
+        flex-direction: column;
         display: flex;
-        justify-content: center; /* Center the content vertically */
-        align-items: center; /* Center the content horizontally */
+        justify-content: center;
+        align-items: center;
         font-size: 3vh;
-        /* Ensure there's enough padding for the two lines to fit comfortably */
     }
     .content {
         flex-direction: column;
@@ -346,15 +346,15 @@ p {
         margin-top: 5vh;
     }
     .image-container img {
-        height: 50vh; /* Adjust based on the container's width while maintaining aspect ratio */
-        width: 45vw; /* Make the image's width responsive to the container's width */
+        height: 50vh;
+        width: 45vw;
         margin-left: 5vw;
-        object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+        object-fit: cover;
         object-position: center;
     }
     .social-icons img {
-        height: 5vw; /* Or your preferred size */
-        margin-right: 5vw; /* Adjust spacing between icons */
+        height: 5vw;
+        margin-right: 5vw;
     }
 }
 
@@ -365,13 +365,11 @@ p {
         transform: translateX(-50%);
     }
     .order-now-button {
-        /* Adjustments specifically for viewports less than 1300px wide */
-        flex-direction: column; /* Explicitly ensure vertical stacking */
+        flex-direction: column;
         display: flex;
-        justify-content: center; /* Center the content vertically */
-        align-items: center; /* Center the content horizontally */
+        justify-content: center;
+        align-items: center;
         font-size: 3vh;
-        /* Ensure there's enough padding for the two lines to fit comfortably */
     }
     .content {
         flex-direction: column;
@@ -398,7 +396,7 @@ p {
         display: flex;
     }
     .social-icons img {
-        height: 7vw; /* Or your preferred size */
-        margin-right: 7vw; /* Adjust spacing between icons */
+        height: 7vw;
+        margin-right: 7vw;
     }
 }
